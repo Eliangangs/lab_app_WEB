@@ -40,7 +40,7 @@ def task_2():
 
 def task_3():
     st.subheader("Завдання 3")
-    text = st.text_area("Введіть текст для аналізу речень:", "Ваш текст тут. Яка погода? Це чудово! І ти...", key="text_task3_lab7")
+    text = st.text_area("Введіть текст для аналізу речень:", "Ваш текст тут. Яка погода? Це чудово! І ти.", key="text_task3_lab7")
     if st.button("Побудувати гістограму речень", key="hist_sentences_button_lab7"):
        if text:
             regular = re.findall(r'[^.!?]*[.!?]', text)
